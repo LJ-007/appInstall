@@ -33,6 +33,10 @@ apps=(  'firefox'
         'webex-meetings'
         'telegram'
         'zoom'
+        'tor-browser'
+        'google-drive'
+        'cron'
+        'oracle-jdk'
         )
 
 for f in $apps;
