@@ -7,9 +7,11 @@ sleep 3
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> /Users/easyosx/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 osascript -e 'display notification "Homebrew installed Succesfully!!!" sound name "Submerge" with title "Welcome to DL"'
 
-# Install the apps
 apps=(  'firefox' 
         'brave-browser'
         'vlc'
@@ -46,3 +48,4 @@ echo $f installed Successfully!!!
 done
 
 osascript -e 'display notification "Apps Installed Successfully!!!" sound name "Submerge" with title "Welcome to DL"'
+osascript -e 'display dialog "Apps Installed Successfully!!!" with title "Welcome to DL"'
